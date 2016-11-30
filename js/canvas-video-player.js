@@ -270,3 +270,7 @@ CanvasVideoPlayer.prototype.loop = function() {
 CanvasVideoPlayer.prototype.drawFrame = function() {
 	this.ctx.drawImage(this.video, 0, 0, this.width, this.height);
 };
+
+CanvasVideoPlayer.prototype.addEventListener = function(eventName, fn) {
+	this.video.addEventListener(eventName, fn);
+};
